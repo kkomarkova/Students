@@ -18,6 +18,7 @@ import java.util.List;
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder> {
 
     private List<Student> mData;
+    //Read XML and use in java
     private LayoutInflater mInflater;
     private ItemClickListener mClickListener;
 
