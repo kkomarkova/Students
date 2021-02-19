@@ -19,6 +19,12 @@ public class Studentslist {
         arraystudent.add(student2);
         arraystudent.add(student3);
         arraystudent.add(student4);
+
+        //Printing out the values
+        for(Student student: arraystudent){
+
+            System.out.println(student);
+        }
     }
 
 }
