@@ -2,6 +2,7 @@ package com.example.students;
 import android.content.Context;
 
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-
+//Our adapter with View Holder
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder> {
 
     private List<Student> mData;
@@ -26,6 +27,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
     CustomAdapter(Context context, List<Student> data) {
         this.mInflater = LayoutInflater.from(context);
         this.mData = data;
+
+        Log.d("Orange", mData.toString());
     }
 
     // inflates the row layout from xml when needed
@@ -39,6 +42,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         Student student = mData.get(position);
+        Log.d("Orange", student.toString());
         holder.myTextView.setText(student.getFirstName());
 
     }
