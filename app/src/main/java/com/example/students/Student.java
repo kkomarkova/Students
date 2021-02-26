@@ -15,10 +15,10 @@ public class Student implements Serializable {
       // Constructor taking 4 parametres
 
     public Student(String firstName, String lastName, int age, String nationality) {
-        this.FirstName = FirstName;
-        this.LastName = LastName;
-        this.Age = Age;
-        this.Nationality = Nationality;
+        this.FirstName = firstName;
+        this.LastName = lastName;
+        this.Age = age;
+        this.Nationality = nationality;
     }
 
     //Methods of Student class
